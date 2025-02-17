@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html>
   <head>
@@ -6,7 +6,7 @@
     <title>&lt;my-element> Demo</title>
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../my-element.js"></script>
+    <script type="module" src="../dist/inputs/slider.js"></script>
     <style>
       p {
         border: solid 1px blue;
@@ -15,8 +15,20 @@
     </style>
   </head>
   <body>
-    <my-element>
-      <p>This is child content</p>
-    </my-element>
+    <h1>Slider ZSlider</h1>
+    <zcl-slider
+      min="100"
+      max="1000"
+      step="50"
+      value="550"
+      uf="38482.20"
+    ></zcl-slider>
+
+    <script>
+      const slider = document.querySelector('zcl-slider');
+      slider.addEventListener('onChange', (e) => {
+        console.log('change', e.target.value);
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Ogg-Regular';
+  src: url('/fonts/Ogg-Regular.eot');
+  src: url('/fonts/Ogg-Regular?#iefix') format('embedded-opentype'),
+       url('/fonts/Ogg-Regular.woff2') format('woff2'), 
+       url('/fonts/Ogg-Regular.woff') format('woff');
+}
